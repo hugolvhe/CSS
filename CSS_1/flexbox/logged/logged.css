@@ -1,0 +1,62 @@
+html body #container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+html body #container .justify {
+  text-align: justify;
+}
+
+html body #container .barrer {
+  text-decoration: line-through;
+  font-weight: bold;
+}
+
+html body #container h1, html body #container h2, html body #container h3, html body #container h4, html body #container h5, html body #container h6 {
+  text-transform: uppercase;
+  text-decoration: underline;
+  letter-spacing: 0.1rem;
+  text-align: center;
+}
+
+html body #container h1 {
+  font-size: 2em;
+}
+
+html body #container h2 {
+  font-size: 1.5em;
+}
+
+html body #container h3 {
+  font-size: 1.25em;
+}
+
+html body #container .part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+html body #container .part > * {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+/*# sourceMappingURL=logged.css.map */

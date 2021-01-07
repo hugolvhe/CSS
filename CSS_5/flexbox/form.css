@@ -1,0 +1,97 @@
+body {
+  margin: 0px;
+}
+
+body * {
+  border-radius: 6px;
+}
+
+body h1 {
+  font-size: 3em;
+  margin-bottom: 0px;
+  color: cornflowerblue;
+}
+
+body h2,
+body h3 {
+  text-decoration: underline;
+  font-size: 1.6em;
+}
+
+body header {
+  border-bottom: 1px black solid;
+  border-radius: 0px;
+}
+
+body header div {
+  background-color: grey;
+}
+
+body #middle {
+  padding: 2em;
+}
+
+body #middle main {
+  margin: 0em 1em 0em 1em;
+}
+
+body #middle main article {
+  padding: 0.2em 1em 1em 1em;
+  background-color: grey;
+  margin: 0em 2em 2em 2em;
+}
+
+body #middle main article div img {
+  border: 1px white solid;
+}
+
+body #middle main article div p {
+  height: auto;
+  font-size: 0.9em;
+  border: 1px black solid;
+  background-color: whitesmoke;
+  margin: 1em;
+  padding: 0.8em;
+}
+
+body #middle nav {
+  background-color: grey;
+}
+
+body #middle nav h2 {
+  text-decoration: underline;
+}
+
+body #middle nav ul {
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+}
+
+body #middle nav ul li {
+  background-color: yellow;
+  margin: 1.5em;
+  padding: 1.5em;
+}
+
+body #middle section[id="galerie"] {
+  background-color: grey;
+}
+
+body #middle section[id="galerie"] img {
+  border: 1px white solid;
+  margin-left: 0.3em;
+}
+
+body footer {
+  background-color: cadetblue;
+  padding: 1em;
+  margin-left: -12px;
+  margin-right: -12px;
+}
+
+body footer img {
+  border: 1px white solid;
+  padding: 0.2em;
+}
+/*# sourceMappingURL=form.css.map */

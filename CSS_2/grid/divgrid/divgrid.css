@@ -1,0 +1,51 @@
+.green {
+  background-color: green;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-column: 1/7;
+}
+
+.yellow {
+  background-color: yellow;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 6;
+  grid-column: span 6/13;
+}
+
+.blue {
+  background-color: blue;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 11;
+  grid-row: 2/13;
+}
+
+.orange {
+  background-color: orange;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 4;
+  grid-row: 2/6;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 11;
+  grid-column: 2/13;
+}
+
+body #container {
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  -ms-grid-rows: (1fr)[5];
+      grid-template-rows: repeat(5, 1fr);
+  -ms-grid-rows: minmax(auto);
+      grid-template-rows: minmax(auto);
+  -ms-grid-columns: minmax(auto);
+      grid-template-columns: minmax(auto);
+}
+/*# sourceMappingURL=divgrid.css.map */

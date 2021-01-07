@@ -1,0 +1,414 @@
+//######################################################################
+//###################  // Commons
+//######################################################################
+body {
+    margin: 0px;
+    padding-left: 0.8em;
+    display: flex;
+    background-image: url("../../assets/background.png");
+    background-size: cover;
+    backdrop-filter: blur(0.2em);
+    flex-direction: column;
+    font-family: "Hack", monospace , "Consolas", monospace;
+    * {
+        border-radius: 0.5em;
+        input[type="submit"] {
+            background-color: green;
+            font-size: 1em;
+            font-weight: bold;
+        }
+    }
+
+    .color_1 {
+        background-color: rgba(0, 0, 0, 0.514);
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        #h1_background {
+            display: flex;
+
+            width: 100%;
+            height: 7em;
+
+            h1 {
+                margin: auto;
+                color: white;
+            }
+        }
+    }
+
+    #middle {
+        margin-bottom: 2em;
+
+        div[id="search"] {
+            display: flex;
+            justify-content: space-between;
+            padding: 1.2em;
+            margin-bottom: 1em;
+
+            &::before {
+                content: "Rechercher";
+                color: white;
+                margin: auto;
+            }
+
+            input[type="search"] {
+                margin-right: 0.7em;
+                margin-left: 0.7em;
+            }
+            input[type="submit"] {
+                padding: 0.7em;
+                width: 10em;
+            }
+        }
+
+        nav {
+            margin-right: 1em;
+
+            #menu {
+                color: white;
+                font-weight: bold;
+                display: flex;
+                flex-direction: column;
+                padding: 1em;
+                margin-bottom: 3em;
+                text-align: center;
+
+                a {
+                    letter-spacing: 0.1em;
+                    color: yellow;
+                }
+            }
+            #publicite {
+                img {
+                    width: 15em;
+                }
+            }
+        }
+        section {
+            padding: 1em;
+
+            h3 {
+                text-align: center;
+                color: white;
+            }
+            article {
+                display: flex;
+                margin-top: 3em;
+                justify-content: center;
+
+                img {
+                    margin: auto;
+                }
+
+                .text_article {
+                    background-color: rgba(0, 0, 0, 0.514);
+                    padding: 1em;
+                    font-size: 0.8em;
+                    color: white;
+                    overflow: auto;
+                    p {
+                        text-align: justify;
+                    }
+                }
+
+                input[value="Details"] {
+                    margin: auto;
+                    padding: 1.8em;
+                }
+            }
+        }
+
+        #chat_customers {
+            border: 1px solid black;
+            margin: 0em 1em 1em 1em;
+            padding: 2em;
+            height: fit-content;
+
+            #conversation {
+                background-color: rgba(216, 214, 214, 0.829);
+                padding: 1em;
+                p {
+                    display: flex;
+                    flex-direction: column;
+                    font-size: 0.9em;
+                    span {
+                        font-weight: bold;
+                    }
+                }
+
+                .support {
+                    color: yellow;
+                    text-align: right;
+                }
+            }
+            div {
+                display: flex;
+                flex-direction: column;
+                textarea {
+                    &::placeholder {
+                        font-style: italic;
+                    }
+                    &:focus {
+                        &::placeholder {
+                            visibility: hidden;
+                        }
+                    }
+                }
+                input {
+                    background-color: green;
+                }
+            }
+        }
+    }
+}
+
+//######################################################################
+//###################  // Mobile : min 50 , max 599
+//######################################################################
+
+@media screen and (min-width: 50px) and (max-width: 599px) {
+    body {
+        height: 100vh;
+        width: 100vw;
+        margin: -10px;
+        header {
+            img {
+                width: 8em;
+                height: 8em;
+            }
+        }
+        #middle {
+            display: flex;
+            flex-direction: column;
+
+            div[id="search"] {
+                flex-direction: column;
+                width: fill-available;
+
+                input[type="search"] {
+                    width: fill-available;
+                    margin: 1em;
+                }
+                input[type="submit"] {
+                    margin: auto;
+                }
+            }
+
+            nav {
+                margin: 1em 0em 1em 0em;
+
+                #menu {
+                    a {
+                        margin-bottom: 1em;
+                    }
+                }
+                #publicite {
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+            section {
+                margin: 2em 0em 2em 0em;
+
+                article {
+                    flex-direction: column;
+                    max-height: fit-content;
+
+                    img {
+                        height: 11em;
+                        width: 11em;
+                    }
+
+                    .text_article {
+                        max-height: 18em;
+                        margin: 1em;
+                        p {
+                            font-size: 1.3em;
+                        }
+                    }
+                }
+            }
+        }
+        #chat_customers {
+            div {
+                textarea {
+                    height: 8em;
+                    max-height: 8em;
+                    overflow: scroll;
+                    margin: 1em 0em 1em 0em;
+                }
+                input {
+                    height: 3em;
+                }
+            }
+        }
+    }
+}
+
+//######################################################################
+//################### // Tablette : min 600 , max 1024
+//######################################################################
+
+@media all and (min-width: 650px) and (max-width: 1023px) {
+    body {
+        height: 100vh;
+        width: 100vw;
+        margin: -10px;
+        header {
+            #h1_background {
+                margin: 1em 0.5em 0em 0.5em;
+            }
+            img {
+                width: 9em;
+                height: 9em;
+                margin: 1em;
+            }
+        }
+        #middle {
+            display: flex;
+            flex-direction: column;
+            margin: 1.2em;
+
+            div[id="search"] {
+                flex-direction: column;
+                width: fill-available;
+       
+
+                input[type="search"] {
+                    width: fill-available;
+                    margin: 2em;
+                    height: 4em;
+                }
+                input[type="submit"] {
+                    margin: auto;
+                }
+            }
+
+            nav {
+                margin: 1em 0em 1em 0em;
+
+                #menu {
+                    font-size: 1.5em;
+                    a {
+                    
+                        margin-bottom: 1em;
+                    }
+                }
+                #publicite {
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+            section {
+                margin: 2em 0em 2em 0em;
+
+                article {
+                    flex-direction: column;
+                    max-height: fit-content;
+
+                    img {
+                        height: 15em;
+                        width: 20em;
+                    }
+
+                    .text_article {
+                        max-height: 18em;
+                        margin: 1em;
+                        p {
+                            font-size: 1.3em;
+                        }
+                    }
+                }
+            }
+        }
+        #chat_customers {
+            div {
+                textarea {
+                    height: 8em;
+                    max-height: 8em;
+                    overflow: scroll;
+                    margin: 2em 0em 2em 0em;
+                }
+                input {
+                    height: 5em;
+                }
+            }
+        }
+    }
+}
+
+//######################################################################
+//################### // Desktop : min 1024
+//######################################################################
+@media screen and (min-width: 1024px) {
+    body {
+        header {
+            #h1_background {
+                margin: 0.2em 1em 0em 0.5em;
+            }
+
+            img {
+                width: 10em;
+                height: 10em;
+            }
+        }
+
+        #middle {
+            display: grid;
+            div[id="search"] {
+                grid-row: 1;
+                grid-column: 2;
+                width: fit-content;
+                input[type="search"] {
+                    width: 30em;
+                }
+            }
+
+            nav {
+                grid-row: 2/4;
+                grid-column: 1;
+                margin-right: 1em;
+
+                #menu {
+                    a {
+                        margin: 1em 0em 3em 0em;
+                    }
+                }
+            }
+            section {
+                grid-row: 2/4;
+                grid-column: 2;
+                article {
+                    flex-direction: row;
+                    max-height: 20em;
+                }
+                img {
+                    height: 11em;
+                    width: 13em;
+                }
+            }
+
+            .text_article {
+                max-height: 20em;
+                margin-left: 1em;
+                margin-right: 1em;
+            }
+
+            #chat_customers {
+                grid-row: 2;
+                grid-column: 3;
+                div {
+                    textarea {
+                        margin: 0.5em;
+                    }
+                    input {
+                        height: 2.5em;
+                    }
+                }
+            }
+        }
+    }
+}

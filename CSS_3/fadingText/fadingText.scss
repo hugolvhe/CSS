@@ -1,0 +1,15 @@
+body {
+  div[id="calque_text"] {
+    background: linear-gradient(to bottom,transparent ,white );
+    //background-color: black;
+    z-index: 1;
+    width: 25%;
+    &:hover{
+        background: none;
+    }
+    p[id="text"] {
+        position: relative;
+        z-index: -1;
+    }
+  }
+}

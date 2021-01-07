@@ -1,0 +1,483 @@
+body {
+  margin: 0px;
+  padding-left: 0.8em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url("../../assets/background.png");
+  background-size: cover;
+  -webkit-backdrop-filter: blur(0.2em);
+          backdrop-filter: blur(0.2em);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Hack", monospace , "Consolas", monospace;
+}
+
+body * {
+  border-radius: 0.5em;
+}
+
+body * input[type="submit"] {
+  background-color: green;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+body .color_1 {
+  background-color: rgba(0, 0, 0, 0.514);
+}
+
+body header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body header #h1_background {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 7em;
+}
+
+body header #h1_background h1 {
+  margin: auto;
+  color: white;
+}
+
+body #middle {
+  margin-bottom: 2em;
+}
+
+body #middle div[id="search"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1.2em;
+  margin-bottom: 1em;
+}
+
+body #middle div[id="search"]::before {
+  content: "Rechercher";
+  color: white;
+  margin: auto;
+}
+
+body #middle div[id="search"] input[type="search"] {
+  margin-right: 0.7em;
+  margin-left: 0.7em;
+}
+
+body #middle div[id="search"] input[type="submit"] {
+  padding: 0.7em;
+  width: 10em;
+}
+
+body #middle nav {
+  margin-right: 1em;
+}
+
+body #middle nav #menu {
+  color: white;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1em;
+  margin-bottom: 3em;
+  text-align: center;
+}
+
+body #middle nav #menu a {
+  letter-spacing: 0.1em;
+  color: yellow;
+}
+
+body #middle nav #publicite img {
+  width: 15em;
+}
+
+body #middle section {
+  padding: 1em;
+}
+
+body #middle section h3 {
+  text-align: center;
+  color: white;
+}
+
+body #middle section article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 3em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body #middle section article img {
+  margin: auto;
+}
+
+body #middle section article .text_article {
+  background-color: rgba(0, 0, 0, 0.514);
+  padding: 1em;
+  font-size: 0.8em;
+  color: white;
+  overflow: auto;
+}
+
+body #middle section article .text_article p {
+  text-align: justify;
+}
+
+body #middle section article input[value="Details"] {
+  margin: auto;
+  padding: 1.8em;
+}
+
+body #middle #chat_customers {
+  border: 1px solid black;
+  margin: 0em 1em 1em 1em;
+  padding: 2em;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+body #middle #chat_customers #conversation {
+  background-color: rgba(216, 214, 214, 0.829);
+  padding: 1em;
+}
+
+body #middle #chat_customers #conversation p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 0.9em;
+}
+
+body #middle #chat_customers #conversation p span {
+  font-weight: bold;
+}
+
+body #middle #chat_customers #conversation .support {
+  color: yellow;
+  text-align: right;
+}
+
+body #middle #chat_customers div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body #middle #chat_customers div textarea::-webkit-input-placeholder {
+  font-style: italic;
+}
+
+body #middle #chat_customers div textarea:-ms-input-placeholder {
+  font-style: italic;
+}
+
+body #middle #chat_customers div textarea::-ms-input-placeholder {
+  font-style: italic;
+}
+
+body #middle #chat_customers div textarea::placeholder {
+  font-style: italic;
+}
+
+body #middle #chat_customers div textarea:focus::-webkit-input-placeholder {
+  visibility: hidden;
+}
+
+body #middle #chat_customers div textarea:focus:-ms-input-placeholder {
+  visibility: hidden;
+}
+
+body #middle #chat_customers div textarea:focus::-ms-input-placeholder {
+  visibility: hidden;
+}
+
+body #middle #chat_customers div textarea:focus::placeholder {
+  visibility: hidden;
+}
+
+body #middle #chat_customers div input {
+  background-color: green;
+}
+
+@media screen and (min-width: 50px) and (max-width: 599px) {
+  body {
+    height: 100vh;
+    width: 100vw;
+    margin: -10px;
+  }
+  body header img {
+    width: 8em;
+    height: 8em;
+  }
+  body #middle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body #middle div[id="search"] {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: -webkit-fill-available;
+    width: -moz-available;
+    width: fill-available;
+  }
+  body #middle div[id="search"] input[type="search"] {
+    width: -webkit-fill-available;
+    width: -moz-available;
+    width: fill-available;
+    margin: 1em;
+  }
+  body #middle div[id="search"] input[type="submit"] {
+    margin: auto;
+  }
+  body #middle nav {
+    margin: 1em 0em 1em 0em;
+  }
+  body #middle nav #menu a {
+    margin-bottom: 1em;
+  }
+  body #middle nav #publicite {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body #middle section {
+    margin: 2em 0em 2em 0em;
+  }
+  body #middle section article {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-height: -webkit-fit-content;
+    max-height: -moz-fit-content;
+    max-height: fit-content;
+  }
+  body #middle section article img {
+    height: 11em;
+    width: 11em;
+  }
+  body #middle section article .text_article {
+    max-height: 18em;
+    margin: 1em;
+  }
+  body #middle section article .text_article p {
+    font-size: 1.3em;
+  }
+  body #chat_customers div textarea {
+    height: 8em;
+    max-height: 8em;
+    overflow: scroll;
+    margin: 1em 0em 1em 0em;
+  }
+  body #chat_customers div input {
+    height: 3em;
+  }
+}
+
+@media all and (min-width: 650px) and (max-width: 1023px) {
+  body {
+    height: 100vh;
+    width: 100vw;
+    margin: -10px;
+  }
+  body header #h1_background {
+    margin: 1em 0.5em 0em 0.5em;
+  }
+  body header img {
+    width: 9em;
+    height: 9em;
+    margin: 1em;
+  }
+  body #middle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 1.2em;
+  }
+  body #middle div[id="search"] {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: -webkit-fill-available;
+    width: -moz-available;
+    width: fill-available;
+  }
+  body #middle div[id="search"] input[type="search"] {
+    width: -webkit-fill-available;
+    width: -moz-available;
+    width: fill-available;
+    margin: 2em;
+    height: 4em;
+  }
+  body #middle div[id="search"] input[type="submit"] {
+    margin: auto;
+  }
+  body #middle nav {
+    margin: 1em 0em 1em 0em;
+  }
+  body #middle nav #menu {
+    font-size: 1.5em;
+  }
+  body #middle nav #menu a {
+    margin-bottom: 1em;
+  }
+  body #middle nav #publicite {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body #middle section {
+    margin: 2em 0em 2em 0em;
+  }
+  body #middle section article {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-height: -webkit-fit-content;
+    max-height: -moz-fit-content;
+    max-height: fit-content;
+  }
+  body #middle section article img {
+    height: 15em;
+    width: 20em;
+  }
+  body #middle section article .text_article {
+    max-height: 18em;
+    margin: 1em;
+  }
+  body #middle section article .text_article p {
+    font-size: 1.3em;
+  }
+  body #chat_customers div textarea {
+    height: 8em;
+    max-height: 8em;
+    overflow: scroll;
+    margin: 2em 0em 2em 0em;
+  }
+  body #chat_customers div input {
+    height: 5em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body header #h1_background {
+    margin: 0.2em 1em 0em 0.5em;
+  }
+  body header img {
+    width: 10em;
+    height: 10em;
+  }
+  body #middle {
+    display: -ms-grid;
+    display: grid;
+  }
+  body #middle div[id="search"] {
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-column: 2;
+    grid-column: 2;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  body #middle div[id="search"] input[type="search"] {
+    width: 30em;
+  }
+  body #middle nav {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    grid-row: 2/4;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    margin-right: 1em;
+  }
+  body #middle nav #menu a {
+    margin: 1em 0em 3em 0em;
+  }
+  body #middle section {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    grid-row: 2/4;
+    -ms-grid-column: 2;
+    grid-column: 2;
+  }
+  body #middle section article {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    max-height: 20em;
+  }
+  body #middle section img {
+    height: 11em;
+    width: 13em;
+  }
+  body #middle .text_article {
+    max-height: 20em;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  body #middle #chat_customers {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    -ms-grid-column: 3;
+    grid-column: 3;
+  }
+  body #middle #chat_customers div textarea {
+    margin: 0.5em;
+  }
+  body #middle #chat_customers div input {
+    height: 2.5em;
+  }
+}
+/*# sourceMappingURL=index.css.map */

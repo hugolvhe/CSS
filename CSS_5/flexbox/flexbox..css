@@ -1,0 +1,103 @@
+body header {
+  text-align: center;
+}
+
+body #middle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body #middle main {
+  margin: 0em 1em 0em 1em;
+}
+
+body #middle main article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body #middle main article div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #middle main article div img {
+  height: 300px;
+  height: 200px;
+}
+
+body #middle main article div p {
+  height: auto;
+  text-align: justify;
+}
+
+body #middle nav {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body #middle nav h2 {
+  text-align: center;
+}
+
+body #middle nav ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body #middle nav ul li a {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+body #middle section[id="galerie"] {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body footer {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+/*# sourceMappingURL=flexbox..css.map */

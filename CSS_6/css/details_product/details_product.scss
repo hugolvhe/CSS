@@ -1,0 +1,379 @@
+
+//######################################################################
+//###################  // Commons
+//######################################################################
+body {
+    display: flex;
+    background-image: url("../../assets/background.png");
+    background-size: cover;
+    backdrop-filter: blur(0.2em);
+    flex-direction: column;
+    font-family: "Hack", monospace , "Consolas", monospace;
+    * {
+        border-radius: 0.5em;
+        input[type="submit"] {
+            background-color: green;
+            font-size: 1em;
+            font-weight: bold;
+        }
+    }
+
+    .color_1 {
+        background-color: rgba(0, 0, 0, 0.514);
+        color: white;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        #h1_background {
+            display: flex;
+            width: 100%;
+            height: 7em;
+            margin: 0.2em 0.5em 0em 0.5em;
+
+            h1 {
+                margin: auto;
+            }
+        }
+    }
+
+    #middle {
+        display: flex;
+        nav {
+            #menu {
+                display: flex;
+                flex-direction: column;
+                padding: 1em;
+                text-align: center;
+
+                a {
+                    color: yellow;
+                }
+            }
+        }
+        section {
+            padding: 0.5em;
+
+            h3 {
+                text-align: center;
+            }
+            article {
+                display: flex;
+                justify-content: center;
+                #images_article {
+                    display: grid;
+                    gap: 0.3em;
+                    width: auto;
+                }
+
+                #text_article {
+                    p {
+                        background-color: rgba(0, 0, 0, 0.514);
+                        margin-top: 0px;
+                        padding: 1.2em;
+                        font-size: 0.8em;
+                        color: white;
+                        text-align: justify;
+                        overflow: auto;
+                        max-height: 20em;
+                    }
+                }
+                #inputs_sale {
+                    display: flex;
+                    justify-content: space-between;
+                    text-align: center;
+                    input[type="number"] {
+                        width: 17%;
+                        height: 3em;
+                        align-self: center;
+                    }
+                    input[type="submit"] {
+                        width: 80%;
+                        height: 4em;
+                    }
+                }
+            }
+
+            #opinions_customers {
+                border: 1px solid black;
+                padding: 0.3em;
+                height: fit-content;
+                width: auto;
+                max-height: 20em;
+                overflow: auto;
+            }
+
+            p {
+                color: white;
+                display: flex;
+                flex-direction: column;
+                font-size: 0.7em;
+                margin-bottom: 2em;
+                text-align: right;
+                span {
+                    color: yellow;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+//######################################################################
+//###################  // Mobile : min 50 , max 599
+//######################################################################
+
+@media screen and (min-width: 50px) and (max-width: 599px) {
+    body {
+        width: 100vw;
+        margin: -10px;
+        header {
+            img {
+                width: 8em;
+                height: 8em;
+            }
+        }
+        #middle {
+            display: flex;
+            flex-direction: column;
+
+            nav {
+                margin: 1em 0em 1em 1em;
+
+                #menu {
+                    a {
+                        margin: 1em 0em 1em 0em;
+                    }
+                }
+            }
+            section {
+                margin: 2em 0em 2em 0em;
+                article {
+                    flex-direction: column;
+                    max-height: fit-content;
+                    #images_article {
+                        width: fit-content;
+                        margin: auto;
+                        img:nth-child(1) {
+                            grid-row: 1;
+                            grid-column: 1/3;
+                            margin: auto;
+                            height: 14em;
+                            width: 14em;
+                        }
+                        img:nth-child(2) {
+                            grid-row: 2;
+                            grid-column: 1/2;
+                            height: 7em;
+                            width: 7em;
+                        }
+                        img:nth-child(3) {
+                            grid-row: 2;
+                            grid-column: 2/2;
+                            height: 7em;
+                            width: 7em;
+                        }
+                        img:nth-child(4) {
+                            grid-row: 3;
+                            grid-column: 1/2;
+                            height: 7em;
+                            width: 7em;
+                        }
+                        img:nth-child(5) {
+                            grid-row: 3;
+                            grid-column: 2/2;
+                            height: 7em;
+                            width: 7em;
+                        }
+                    }
+                }
+                #text_article {
+                    margin: 1em;
+                    width: auto;
+                }
+
+                #opinions_customers {
+                    margin: 1em;
+                }
+            }
+        }
+    }
+}
+
+//######################################################################
+//################### // Tablette : min 600 , max 1024
+//######################################################################
+
+@media all and (min-width: 650px) and (max-width: 1023px) {
+    body {
+        width: 100vw;
+        margin: -10px;
+        header {
+            h1 {
+                font-size: 3em;
+            }
+            img {
+                width:12em;
+                height: 11em;
+            }
+        }
+        #middle {
+            display: flex;
+            flex-direction: column;
+
+            nav {
+                margin: 1em 0em 1em 1em;
+                font-size: 2em;
+
+                #menu {
+                    a {
+                        margin: 1em 0em 1em 0em;
+
+          
+                    }
+                }
+            }
+            section {
+                margin: 2em 0em 2em 0em;
+                h3 {
+                    font-size: 2em;
+                }
+                article {
+                
+                    flex-direction: column;
+                    max-height: fit-content;
+                    #images_article {
+                        width: fit-content;
+                        margin: auto;
+                        img:nth-child(1) {
+                            grid-row: 1/3;
+                            grid-column: 1;
+                            margin: auto;
+                            height: 16em;
+                            width: 16em;
+                        }
+                        img:nth-child(2) {
+                            grid-row: 1;
+                            grid-column: 2;
+                            height: 8em;
+                            width: 8em;
+                        }
+                        img:nth-child(3) {
+                            grid-row: 1;
+                            grid-column: 3;
+                            height: 8em;
+                            width: 8em;
+                        }
+                        img:nth-child(4) {
+                            grid-row: 2;
+                            grid-column: 2;
+                            height: 8em;
+                            width: 8em;
+                        }
+                        img:nth-child(5) {
+                            grid-row: 2;
+                            grid-column: 3;
+                            height: 8em;
+                            width: 8em;
+                        }
+                    }
+                }
+                #text_article {
+                    margin: 1em;
+                    width: auto;
+                    font-size: 2em;
+                }
+
+                #opinions_customers {
+                    margin: 1em;
+                    font-size: 2em;
+                }
+            }
+        }
+    }
+}
+
+//######################################################################
+//################### // Desktop : min 1024
+//######################################################################
+@media screen and (min-width: 1024px) {
+    body {
+        margin: 0px;
+        header {
+            width: 100%;
+            #h1_background {
+                img {
+                    width: 8em;
+                    height: 8em;
+                }
+            }
+        }
+        #middle {
+            flex-direction: row;
+            margin: 2em 0em 1em 1em ;
+
+            nav {
+                margin-right: 1em;
+                #menu {
+                    padding: 1em 5em 1em 5em;
+                    a {
+                        margin: 1em 0em 3em 0em;
+                    }
+                }
+            }
+            section {
+                margin: 0em 1em 1em 0em;
+                flex-direction: row;
+                article {
+                    #images_article {
+                        display: grid;
+                        gap: 0.3em;
+                        width: auto;
+                        grid-template: 7em 7em 7em 7em / 1fr 1fr 1fr 1fr;
+                        img:nth-child(1) {
+                            grid-row: 1;
+                            grid-column: 1/3;
+                            margin: auto;
+                            height: 14em;
+                            width: 14em;
+                        }
+                        img:nth-child(2) {
+                            grid-row: 3;
+                            grid-column: 1/2;
+                            height: 7em;
+                            width: 7em;
+                        }
+                        img:nth-child(3) {
+                            grid-row: 3;
+                            grid-column: 2/2;
+                            height: 7em;
+                            width: 7em;
+                        }
+                        img:nth-child(4) {
+                            grid-row: 4;
+                            grid-column: 1/2;
+                            height: 7em;
+                            width: 7em;
+                        }
+                        img:nth-child(5) {
+                            grid-row: 4;
+                            grid-column: 2/2;
+                            height: 7em;
+                            width: 7em;
+                        }
+                    }
+
+                    #text_article {
+                        margin: 3em;
+                    }
+                    #opinions_customers {
+                        margin-top: 3em;
+                    }
+                }
+            }
+        }
+    }
+}

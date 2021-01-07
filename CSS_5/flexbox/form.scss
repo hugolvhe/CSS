@@ -1,0 +1,96 @@
+body {
+    margin: 0px;
+    * {
+        border-radius: 6px;
+    }
+    h1 {
+        font-size: 3em;
+        margin-bottom: 0px;
+        color: cornflowerblue;
+    }
+    h2,
+    h3 {
+        text-decoration: underline;
+        font-size: 1.6em;
+    }
+    header {
+        div {
+            background-color: grey;
+        }
+        border-bottom: 1px black solid;
+        border-radius: 0px;
+    }
+    #middle {
+        padding: 2em;
+
+        main {
+            margin: 0em 1em 0em 1em;
+            article {
+                padding: 0.2em 1em 1em 1em;
+                background-color: grey;
+                margin: 0em 2em 2em 2em;
+                div {
+                    img {
+                        border: 1px white solid;
+                    }
+                    p {
+                        height: auto;
+                        font-size: 0.9em;
+                        border: 1px black solid;
+                        background-color: whitesmoke;
+                        margin: 1em;
+                        padding: 0.8em;
+                    }
+                }
+            }
+        }
+
+        nav {
+            background-color: grey;
+            // h2 {
+            //     text-align: center;
+            //     text-decoration: underline;
+            // }
+            //     padding: none;
+            //     a {
+            //         background-color: yellow;
+            //         margin: 1em;
+            //         padding: 1em;
+            //         border-radius: 2px;
+            //     }
+            h2 {
+                text-decoration: underline;
+            }
+
+            ul {
+                padding: 0px;
+                margin: 0px;
+                list-style-type: none;
+                li {
+                    background-color: yellow;
+                    margin: 1.5em;
+                    padding: 1.5em;
+                }
+            }
+        }
+
+        section[id="galerie"] {
+            background-color: grey;
+            img {
+                border: 1px white solid;
+                margin-left: 0.3em;
+            }
+        }
+    }
+    footer {
+        background-color: cadetblue;
+        padding: 1em;
+        margin-left: -12px;
+        margin-right: -12px;
+
+        img {
+            border: 1px white solid;
+            padding: 0.2em;
+        }
+    }
+}

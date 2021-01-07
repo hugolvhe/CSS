@@ -1,0 +1,98 @@
+body {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font: 1.5em Georgia, serif;
+}
+
+body h1:nth-child(1) {
+  color: darkseagreen;
+  text-shadow: 0px 5px 3px black;
+}
+
+body h1:nth-child(2) {
+  color: lightblue;
+  text-shadow: 1px 0 black, -1px 0 black, 1px 0 black;
+}
+
+body .rectangle {
+  background-color: cadetblue;
+  height: 5em;
+  width: 12em;
+  -webkit-box-shadow: 8px 8px 2.5px grey;
+          box-shadow: 8px 8px 2.5px grey;
+  margin: 01em;
+}
+
+body div[id="rectangle_1"]:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transform: translateY(5px), translateX(5px);
+          transform: translateY(5px), translateX(5px);
+}
+
+body div[id="rectangle_2"]:hover {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
+body div[id="rectangle_3"]:hover {
+  -webkit-transform: rotate(-60deg);
+          transform: rotate(-60deg);
+}
+
+body .button {
+  background-color: darkslateblue;
+  border-radius: 2em;
+  height: 5em;
+  width: 12em;
+  outline-style: none;
+  border-style: none;
+  display: inline-block;
+  margin: 1em;
+}
+
+body input[id="button_1"] {
+  -webkit-box-shadow: 1px 3px 2.5px black, 1px 3px 2.5px black, 1px 3px 2.5px black, 1px -2px 2.5px black, 1px -2px 2.5px black, 1px -2px 2.5px black;
+          box-shadow: 1px 3px 2.5px black, 1px 3px 2.5px black, 1px 3px 2.5px black, 1px -2px 2.5px black, 1px -2px 2.5px black, 1px -2px 2.5px black;
+}
+
+body input[id="button_1"]:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: -webkit-transform 2s ease, -webkit-box-shadow 1s ease;
+  transition: -webkit-transform 2s ease, -webkit-box-shadow 1s ease;
+  transition: transform 2s ease, box-shadow 1s ease;
+  transition: transform 2s ease, box-shadow 1s ease, -webkit-transform 2s ease, -webkit-box-shadow 1s ease;
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
+
+body input[id="button_2"]:active {
+  -webkit-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+  opacity: 0.7;
+}
+
+body input[id="button_3"]:active {
+  -webkit-box-shadow: 1px 3px 2.5px black, 1px 3px 2.5px black, 1px 3px 2.5px black, 1px -2px 2.5px black, 1px -2px 2.5px black, 1px -2px 2.5px black;
+          box-shadow: 1px 3px 2.5px black, 1px 3px 2.5px black, 1px 3px 2.5px black, 1px -2px 2.5px black, 1px -2px 2.5px black, 1px -2px 2.5px black;
+  -webkit-transition: -webkit-transform 2s ease, -webkit-box-shadow 1s ease;
+  transition: -webkit-transform 2s ease, -webkit-box-shadow 1s ease;
+  transition: transform 2s ease, box-shadow 1s ease;
+  transition: transform 2s ease, box-shadow 1s ease, -webkit-transform 2s ease, -webkit-box-shadow 1s ease;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+/*# sourceMappingURL=shadow.css.map */

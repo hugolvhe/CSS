@@ -1,0 +1,41 @@
+html body #container {
+  margin: 20px;
+  padding: 20px;
+}
+
+html body #container .justify {
+  text-align: justify;
+}
+
+html body #container .barrer {
+  text-decoration: line-through;
+  font-weight: bold;
+}
+
+html body #container h1, html body #container h2, html body #container h3, html body #container h4, html body #container h5, html body #container h6 {
+  text-transform: uppercase;
+  text-decoration: underline;
+  letter-spacing: 0.1rem;
+}
+
+html body #container h1 {
+  font-size: 2em;
+}
+
+html body #container h2 {
+  font-size: 1.5em;
+}
+
+html body #container h3 {
+  font-size: 1.25em;
+}
+
+html body #container p {
+  line-height: 2rem;
+  font-size: 1em;
+}
+
+html body #container p:hover {
+  font-size: 2em;
+}
+/*# sourceMappingURL=logged.css.map */

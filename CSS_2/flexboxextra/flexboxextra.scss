@@ -1,0 +1,32 @@
+.child2 {
+  background-color: yellow;
+  height: 80%;
+  width: 300px;
+  border: solid red 1px;
+}
+
+body {
+  .container {
+    display: flex;
+    background-color: lightgreen;
+    height: 150px;
+    width: 50vw;
+    align-items: center;
+    margin-bottom: 2vh;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+    .child {
+      background-color: blueviolet;
+      height: 100px;
+      width: 100px;
+      border: solid red 1px;
+    }
+    :nth-child(1) {
+      align-self: flex-start;
+    }
+    :nth-child(3) {
+      align-self: flex-end;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+html{
+    background-color :#ffffcc;
+   
+    * {
+        font-family: Arial;
+    }
+
+    body {
+
+        #login-page {
+            height: 100vh;
+        
+            h1 {
+                color: red;
+                font-size: 2em;
+            }
+            label {
+                color :#00008B;
+            }
+            input {
+                background-color: #e6fff2;
+            }
+            
+            .input-spacing {
+                margin-top: 1em;
+            }
+
+            #connection-button {
+                width: 6vw;
+                margin-top: 1em;
+                padding: 0.5em;
+                border: solid, 1px, blue;
+                border-radius: 2em;
+                background-color: #0099ff;
+                display: flex;
+                justify-content: center;
+
+                &:hover {
+                    background-color: #97d3fc ;
+                }
+            }
+        }
+    }
+}

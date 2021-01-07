@@ -1,0 +1,191 @@
+html body #container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: lightgreen;
+  width: 100%;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 35px;
+}
+
+html body #container .first_child {
+  background-color: blueviolet;
+  height: 100px;
+  width: 100px;
+  border: solid black 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+html body #container .first_child :nth-child(1), html body #container .first_child :nth-child(2) {
+  background-color: yellow;
+  height: 20px;
+  width: 20px;
+  border: 0.1px black solid;
+}
+
+html body #container #child {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+html body #container #child :nth-child(1), html body #container #child :nth-child(2) {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: auto;
+}
+
+html body #container #child_1 {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+html body #container #child_1 :nth-child(1), html body #container #child_1 :nth-child(2) {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+html body #container #child_2 {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+html body #container #child_2 :nth-child(1), html body #container #child_2 :nth-child(2) {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+html body #container #child_3 {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+html body #container #child_3 :nth-child(1), html body #container #child_3 :nth-child(2) {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+html body #container #child_4 {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+html body #container #child_4 :nth-child(1), html body #container #child_4 :nth-child(2) {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+html body #container #child_5 {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+html body #container #child_5 :nth-child(1), html body #container #child_5 :nth-child(2) {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+html body #container #child_6 {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+html body #container #child_6 :nth-child(1), html body #container #child_6 :nth-child(2) {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+html body #container #child_6 {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: inherit;
+      -ms-flex-pack: inherit;
+          justify-content: inherit;
+}
+
+html body #container #child_7 {
+  background-color: blueviolet;
+  height: 100px;
+  width: 100px;
+  border: solid black 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: inherit;
+      -ms-flex-pack: inherit;
+          justify-content: inherit;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+html body #container #child_7 :nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+html body #container #child_7 :nth-child(1) :nth-child(1), html body #container #child_7 :nth-child(1) :nth-child(2) {
+  background-color: yellow;
+  height: 20px;
+  width: 20px;
+  border: 0.5px black solid;
+}
+
+html body #container #child_7 :nth-child(2) {
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+html body #container #child_7 :nth-child(2) :nth-child(1), html body #container #child_7 :nth-child(2) :nth-child(2) {
+  background-color: yellow;
+  height: 20px;
+  width: 20px;
+  border: 0.5px black solid;
+}
+/*# sourceMappingURL=flexbox.css.map */

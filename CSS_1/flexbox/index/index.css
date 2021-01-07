@@ -1,0 +1,70 @@
+html {
+  background-color: #ffffcc;
+}
+
+html * {
+  font-family: Arial;
+}
+
+html body #login-page {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+html body #login-page form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+html body #login-page h1 {
+  color: red;
+  font-size: 2em;
+}
+
+html body #login-page label {
+  color: #00008B;
+}
+
+html body #login-page input {
+  background-color: #e6fff2;
+}
+
+html body #login-page .input-spacing {
+  margin-top: 1em;
+}
+
+html body #login-page #connection-button {
+  width: 6vw;
+  margin-top: 1em;
+  padding: 0.5em;
+  border: solid, 1px, blue;
+  border-radius: 2em;
+  background-color: #0099ff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+html body #login-page #connection-button:hover {
+  background-color: #97d3fc;
+}
+/*# sourceMappingURL=index.css.map */

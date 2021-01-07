@@ -1,0 +1,21 @@
+body {
+    h1 {
+        text-align: center;
+    }
+    #test {
+        display: grid;
+        grid-template-columns: 25% 1fr;
+        gap: 2em;
+        
+        :nth-child(1){
+            grid-row: 1;
+            grid-column: 2;
+
+        }
+        :nth-child(2){
+            grid-row: 1;
+            grid-column: 1;
+       
+        }
+    }
+}

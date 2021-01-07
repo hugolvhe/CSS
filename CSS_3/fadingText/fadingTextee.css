@@ -1,0 +1,17 @@
+.a{
+	height: 50vh;
+	width: 100vw;
+	background-image: linear-gradient(to bottom, white);
+	position: relative;
+	z-index: 3;
+}
+p{
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-column:2/3;
+	position: relative;
+	z-index: -5;
+}
+p:hover{
+	opacity: 1;
+}

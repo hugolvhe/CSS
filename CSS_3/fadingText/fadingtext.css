@@ -1,0 +1,16 @@
+body div[id="calque_text"] {
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(white));
+  background: linear-gradient(to bottom, transparent, white);
+  z-index: 1;
+  width: 25%;
+}
+
+body div[id="calque_text"]:hover {
+  background: none;
+}
+
+body div[id="calque_text"] p[id="text"] {
+  position: relative;
+  z-index: -1;
+}
+/*# sourceMappingURL=fadingText.css.map */

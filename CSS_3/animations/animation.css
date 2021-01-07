@@ -1,0 +1,278 @@
+body {
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  gap: 8em;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+body .form_animated {
+  height: 250px;
+  width: 250px;
+  margin-left: 50%;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    background-color: white;
+  }
+  33% {
+    background-color: blue;
+  }
+  66% {
+    background-color: red;
+  }
+  100% {
+    background-color: green;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    background-color: white;
+  }
+  33% {
+    background-color: blue;
+  }
+  66% {
+    background-color: red;
+  }
+  100% {
+    background-color: green;
+  }
+}
+
+@-webkit-keyframes anim_2 {
+  from {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  to {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+
+@keyframes anim_2 {
+  from {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  to {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+
+@-webkit-keyframes anim_3 {
+  0% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  100% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+}
+
+@keyframes anim_3 {
+  0% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  100% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+}
+
+@-webkit-keyframes anim_4 {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+
+@keyframes anim_4 {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+
+@-webkit-keyframes anim_5 {
+  20% {
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+  }
+  20% {
+    -webkit-transform: translate(100%, 30%);
+            transform: translate(100%, 30%);
+  }
+  40% {
+    -webkit-transform: translate(0%, 60%);
+            transform: translate(0%, 60%);
+  }
+  60% {
+    -webkit-transform: translate(100%, 70%);
+            transform: translate(100%, 70%);
+  }
+  80% {
+    -webkit-transform: translate(0%, 80%);
+            transform: translate(0%, 80%);
+  }
+  100% {
+    -webkit-transform: translate(100%, 100%);
+            transform: translate(100%, 100%);
+  }
+}
+
+@keyframes anim_5 {
+  20% {
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+  }
+  20% {
+    -webkit-transform: translate(100%, 30%);
+            transform: translate(100%, 30%);
+  }
+  40% {
+    -webkit-transform: translate(0%, 60%);
+            transform: translate(0%, 60%);
+  }
+  60% {
+    -webkit-transform: translate(100%, 70%);
+            transform: translate(100%, 70%);
+  }
+  80% {
+    -webkit-transform: translate(0%, 80%);
+            transform: translate(0%, 80%);
+  }
+  100% {
+    -webkit-transform: translate(100%, 100%);
+            transform: translate(100%, 100%);
+  }
+}
+
+body div[id="anim_1"] {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  background-color: white;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+body div[id="anim_2"] {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  border-radius: 100%;
+  background-color: black;
+  -webkit-animation-name: anim_2;
+          animation-name: anim_2;
+  -webkit-animation-timing-function: steps(5);
+          animation-timing-function: steps(5);
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: initial;
+          animation-iteration-count: initial;
+}
+
+body div[id="anim_3"] {
+  -ms-grid-row: 4;
+  grid-row: 4;
+}
+
+body div[id="anim_3"] div[id="anim_3_child"] {
+  border-radius: 100%;
+  background-color: blue;
+  -webkit-animation-name: anim_3;
+          animation-name: anim_3;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+body div[id="anim_4"] {
+  -ms-grid-row: 7;
+  grid-row: 7;
+  background-color: green;
+  -webkit-box-shadow: 51px 11px 22px -12px rgba(0, 0, 0, 0.75);
+          box-shadow: 51px 11px 22px -12px rgba(0, 0, 0, 0.75);
+  -webkit-animation-name: anim_4;
+          animation-name: anim_4;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+body div[id="anim_5"] {
+  -ms-grid-row: 9;
+  grid-row: 9;
+}
+
+body div[id="anim_5"] div[id="anim_5_child"] {
+  border-radius: 100%;
+  background-color: red;
+  -webkit-animation-name: anim_5;
+          animation-name: anim_5;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+body input[id="button_1"] {
+  -ms-grid-row: 11;
+  grid-row: 11;
+  -ms-grid-column: 5;
+  grid-column: 5;
+  background-color: darkslateblue;
+  border-radius: 1.2em;
+  height: 300px;
+  width: 600px;
+  outline-style: none;
+  border-style: none;
+  display: inline-block;
+  margin: 1em;
+  font: 6em Georgia, serif;
+  -webkit-box-shadow: 18px 3px 2.5px black, 18px 3px 2.5px black, 18px 3px 2.5px black, 1px -2px 2.5px black, 1px -2px 2.5px black, 1px -2px 2.5px black;
+          box-shadow: 18px 3px 2.5px black, 18px 3px 2.5px black, 18px 3px 2.5px black, 1px -2px 2.5px black, 1px -2px 2.5px black, 1px -2px 2.5px black;
+}
+
+body input[id="button_1"]:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: -webkit-transform 2s ease, -webkit-box-shadow 1s ease;
+  transition: -webkit-transform 2s ease, -webkit-box-shadow 1s ease;
+  transition: transform 2s ease, box-shadow 1s ease;
+  transition: transform 2s ease, box-shadow 1s ease, -webkit-transform 2s ease, -webkit-box-shadow 1s ease;
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
+/*# sourceMappingURL=animation.css.map */

@@ -1,0 +1,148 @@
+<html>
+
+<head>
+    <title>Index</title>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index/index.css" />
+</head>
+
+<body>
+    <header>
+
+            <div id="h1_background" class="color_1">
+                <h1>E-commerce</h1>
+            </div>
+
+        <img src="../assets/logo.jpg">
+    </header>
+
+    <div id="middle">
+        <nav>
+            <div id="menu" class="color_1">
+                <h3>Menu</h3>
+                <a href="menu"> Menu</a>
+                <a href="menu"> Menu</a>
+                <a href="menu"> Menu</a>
+                <a href="menu"> Menu</a>
+            </div>
+
+            <div id="publicite">
+                <a href="menu"> <img src="../assets/logo.jpg" /></a>
+            </div>
+        </nav>
+
+        <div id="search" class="color_1">
+            <input type="search" />
+            <input type="submit" value="rechercher">
+        </div>
+
+        <section class="color_1">
+            <h3>Articles</h3>
+            <article>
+                <img src="../assets/logo.jpg" alt="details_produit" />
+
+                <div class="text_article">
+
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ipsam culpa ab consequatur
+                        voluptatem ea assumenda sunt error, amet quas officiis facilis quo quos eligendi totam dicta
+                        eaque
+                        minus quod.
+                        Saepe ut quae debitis doloribus a recusandae sequi laudantium odit nisi incidunt iusto sit
+                        quidem
+                        dolorem soluta quisquam unde, ad fugit error voluptates voluptatem maiores cum! Totam distinctio
+                        repellat consectetur?
+                        Optio officia fugiat quidem quae unde ex et error quasi est obcaecati numquam impedit excepturi,
+                        eum
+                        illum quibusdam a dolore pariatur odit illo quas! Minus corrupti expedita voluptatibus sit quo.
+                        Perspiciatis dignissimos quam labore quasi amet veniam cumque nihil assumenda, repellat incidunt
+                        voluptatum consequatur impedit magnam, ratione ut vel. Aliquid ipsa eaque minima fugiat. Soluta
+                        in
+                        magni eius nisi doloremque.
+                    </p>
+                </div>
+                <input type="submit" value="Details">
+            </article>
+
+            <article>
+                <img src="../assets/logo.jpg" alt="details_produit" />
+                <div class="text_article">
+                    <h4>Hello</h4>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ipsam culpa ab consequatur
+                        voluptatem ea assumenda sunt error, amet quas officiis facilis quo quos eligendi totam dicta
+                        eaque
+                        minus quod.
+                        Saepe ut quae debitis doloribus a recusandae sequi laudantium odit nisi incidunt iusto sit
+                        quidem
+                        dolorem soluta quisquam unde, ad fugit error voluptates voluptatem maiores cum! Totam distinctio
+                        repellat consectetur?
+                        Optio officia fugiat quidem quae unde ex et error quasi est obcaecati numquam impedit excepturi,
+                        eum
+                        illum quibusdam a dolore pariatur odit illo quas! Minus corrupti expedita voluptatibus sit quo.
+                        Perspiciatis dignissimos quam labore quasi amet veniam cumque nihil assumenda, repellat incidunt
+                        voluptatum consequatur impedit magnam, ratione ut vel. Aliquid ipsa eaque minima fugiat. Soluta
+                        in
+                        magni eius nisi doloremque.
+                    </p>
+                </div>
+                <input type="submit" value="Details">
+            </article>
+
+            <article>
+                <img src="../assets/logo.jpg" alt="details_produit" />
+                <div class="text_article">
+                    <h4>Hello</h4>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ipsam culpa ab consequatur
+                        voluptatem ea assumenda sunt error, amet quas officiis facilis quo quos eligendi totam dicta
+                        eaque
+                        minus quod.
+                        Saepe ut quae debitis doloribus a recusandae sequi laudantium odit nisi incidunt iusto sit
+                        quidem
+                        dolorem soluta quisquam unde, ad fugit error voluptates voluptatem maiores cum! Totam distinctio
+                        repellat consectetur?
+                        Optio officia fugiat quidem quae unde ex et error quasi est obcaecati numquam impedit excepturi,
+                        eum
+                        illum quibusdam a dolore pariatur odit illo quas! Minus corrupti expedita voluptatibus sit quo.
+                        Perspiciatis dignissimos quam labore quasi amet veniam cumque nihil assumenda, repellat incidunt
+                        voluptatum consequatur impedit magnam, ratione ut vel. Aliquid ipsa eaque minima fugiat. Soluta
+                        in
+                        magni eius nisi doloremque.
+                    </p>
+                </div>
+                <input type="submit" value="Details">
+            </article>
+            <script>
+                const all_btn_details = document.querySelectorAll("input[value='Details']");
+                all_btn_details.forEach(btn => {
+                    btn.addEventListener("click", event => {
+                        event.preventDefault();
+                        window.location.href = "./details_product.html";
+                    })
+                })
+            </script>
+        </section>
+
+
+        <div id="chat_customers" class="color_1">
+
+            <div id="conversation">
+                <p class="support">
+                    <span>Support:</span>
+                    Bonjour, un problème ?
+                </p>
+                <p>
+                    <span>Client:</span>
+                    Bonjour, un problème ?
+                </p>
+                <p class="support">
+                    <span>Support:</span>
+                    Bonjour, un problème ?
+                </p>
+            </div>
+            <div>
+                <textarea placeholder="Ecrivez votre message"></textarea>
+                <input type="submit" value="Envoyer">
+            </div>
+        </div>
+</body>
+
+</html>

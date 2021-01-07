@@ -1,0 +1,346 @@
+$color_h1 : blue;
+$main_color : grey;
+
+//######################################################################
+//###################  // Mobile : min 50 , max 599
+//######################################################################
+
+@media all and (min-width: 50px) and (max-width: 599px) {
+    body {
+        margin: 0px;
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 6px;
+        }
+        h1 {
+            color:$color_h1;
+        }
+        h2,
+        h3 {
+            text-decoration: underline;
+            text-align: center;
+        }
+        header {
+            div {
+                background-color: $main_color;
+                img[src="../assets/adel.png"] {
+                    margin: auto;
+                    transform: scale(0.6);
+                }
+            }
+            text-align: center;
+            border-bottom: 1px black solid;
+        }
+        #middle {
+            padding: 1em;
+            #middle_for_queries {
+                main {
+                    article {
+                        background-color: $main_color;
+                        margin-top: 1em;
+                        margin-bottom: 1em;
+                        padding: 0.3em;
+                        div {
+                            display: flex;
+                            align-items: center;
+                            flex-direction: column;
+                            img {
+                                border: 1px white solid;
+                                height: 9em;
+                                width: 13em;
+                            }
+                            p {
+                                font-size: 0.9em;
+                                text-align: justify;
+                                border: 1px black solid;
+                                background-color: whitesmoke;
+                                margin: 1em;
+                                padding: 0.8em;
+                            }
+                        }
+                    }
+                }
+
+                nav {
+                    background-color: $main_color;
+
+                    ul {
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        list-style-type: none;
+                        list-style-type: none;
+                        padding-bottom: 1em;
+
+                        li {
+                            background-color: yellow;
+                            margin: 0.2em;
+                            padding: 1em;
+                        }
+                    }
+                }
+            }
+            section[id="galerie"] {
+                background-color: $main_color;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                padding: 1em;
+                margin-bottom: 2em;
+
+                #images_galerie {
+                    padding-right: 1em;
+                    padding-left: 1.4em;
+                    img {
+                        border: 1px white solid;
+
+                        width: 9em;
+                        height: 8em;
+                    }
+                }
+            }
+        }
+        footer {
+            background-color: cadetblue;
+            justify-content: space-around;
+            padding: 1em;
+            display: flex;
+            flex-direction: row;
+            margin-left: -2px;
+            margin-right: -2px;
+
+            img {
+                border: 1px white solid;
+                padding: 0.2em;
+            }
+        }
+    }
+}
+//######################################################################
+//################### // Tablette : min 600 , max 1024
+//######################################################################
+
+@media all and (min-width: 600px) and (max-width: 1023px) {
+    body {
+        margin: 0px;
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 6px;
+        }
+        h2,
+        h3 {
+            text-decoration: underline;
+            text-align: center;
+        }
+        header {
+            div {
+                background-color: $main_color;
+            }
+            text-align: center;
+            border-bottom: 1px black solid;
+            border-radius: 0px;
+        }
+        #middle {
+            display: flex;
+            flex-direction: column;
+            #middle_for_queries {
+                display: flex;
+                padding-top: 1em;
+                flex-direction: row;
+
+                main {
+                    article {
+                        display: flex;
+                        flex-direction: column;
+                        padding: 0.2em 1em 1em 1em;
+                        background-color: $main_color;
+                        margin: 0em 1.5em 1.5em 1.5em;
+
+                        div {
+                            display: flex;
+                            align-items: center;
+                            flex-direction: column;
+
+                            img {
+                                border: 1px white solid;
+                                height: 9em;
+                                width: 12em;
+                            }
+                            p {
+                                font-size: 0.9em;
+                                text-align: justify;
+                                border: 1px black solid;
+                                background-color: whitesmoke;
+                                padding: 0.8em;
+                            }
+                        }
+                    }
+                }
+
+                nav {
+                    background-color: $main_color;
+                    height: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    ul {
+                        padding: 0px;
+                        margin: 0px;
+                        list-style-type: none;
+                        li {
+                            background-color: yellow;
+                            margin: 1.5em;
+                            padding: 1.5em;
+                            border-radius: 6px;
+                            display: flex;
+                            justify-content: center;
+
+                            a {
+                                width: max-content;
+                            }
+                        }
+                    }
+                }
+            }
+            section[id="galerie"] {
+                background-color: $main_color;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                padding: 1em;
+                margin-bottom: 2em;
+                #images_galerie {
+                    img {
+                        border: 1px white solid;
+                        width: 10em;
+                        height: 10em;
+                    }
+                }
+            }
+        }
+        footer {
+            background-color: cadetblue;
+            justify-content: space-between;
+            padding: 1em;
+            display: flex;
+            flex-direction: row;
+            margin-left: -10px;
+            margin-right: -10px;
+
+            img {
+                border: 1px white solid;
+                padding: 0.2em;
+            }
+        }
+    }
+}
+
+//######################################################################
+//################### // Desktop : min 1024
+//######################################################################
+@media all and (min-width: 1024px) {
+    body {
+        margin: 0px;
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 6px;
+        }
+        h2,
+        h3 {
+            text-decoration: underline;
+        }
+        header {
+            div {
+                background-color: $main_color;
+            }
+            text-align: center;
+            border-bottom: 1px black solid;
+        }
+        #middle {
+            display: flex;
+            padding: 2em;
+            flex-direction: row;
+            #middle_for_queries {
+                display: flex;
+                main {
+                    article {
+                        padding: 0.2em 1em 1em 1em;
+                        background-color: $main_color;
+                        margin: 0em 2em 2em 2em;
+
+                        div {
+                            display: flex;
+                            align-items: center;
+
+                            img {
+                                border: 1px white solid;
+                                height: 200px;
+                                width: 300px;
+                            }
+                            p {
+                                font-size: 1em;
+                                text-align: justify;
+                                border: 1px black solid;
+                                background-color: whitesmoke;
+                                margin: 1em;
+                                padding: 0.8em;
+                            }
+                        }
+                    }
+                }
+            }
+
+            nav {
+                background-color: $main_color;
+                align-self: flex-start;
+                h2 {
+                    text-align: center;
+                    text-decoration: underline;
+                }
+
+                ul {
+                    padding: 0px;
+                    margin: 0px;
+                    list-style-type: none;
+                    li {
+                        background-color: yellow;
+                        margin: 1.5em;
+                        padding: 1em;
+                        border-radius: 6px;
+                        display: flex;
+                        justify-content: center;
+
+                        a {
+                            width: max-content;
+                        }
+                    }
+                }
+            }
+
+            section[id="galerie"] {
+                background-color: $main_color;
+                padding: 1em;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                #images_galerie {
+                    img {
+                        border: 1px white solid;
+                    }
+                }
+            }
+        }
+        footer {
+            background-color: cadetblue;
+            justify-content: space-around;
+            padding: 1em;
+            display: flex;
+            flex-direction: row;
+
+            img {
+                border: 1px white solid;
+                padding: 0.2em;
+                border-radius: 4px;
+            }
+        }
+    }
+}
